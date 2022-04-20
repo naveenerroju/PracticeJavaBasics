@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class LengthOfStrings {
     public static void lengthOfStrings(List<String> input){
+
         //making the input stream, then using map function to get the length of every element and then collecting them to store in sizes
         List<Integer> sizes = input.stream().map(x->x.length()).collect(Collectors.toList());
         System.out.println("sizes of the elements are "+sizes);
