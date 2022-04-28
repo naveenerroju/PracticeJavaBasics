@@ -2,6 +2,8 @@ package dsa;
 
 import java.util.Stack;
 
+//STACKS FOLLOW 'FIRST IN FIRST OUT' ORDER
+
 public class StackDS {
     public static void main(String[] args) {
         Stack<String> books = new Stack<>();
@@ -11,8 +13,12 @@ public class StackDS {
         books.push("Edger Allen Poe");
         System.out.println(books);
         books.push("Rumi");
-        books.pop();
+        System.out.println(books.pop()); //pop will remove and return the last element
+        System.out.println(books.peek()); //returns the last element without removing
         books.push("Khalil Gibran");
         System.out.println(books);
+
+        books.clear();
+        System.out.println("the list is empty? "+books.empty());
     }
 }
